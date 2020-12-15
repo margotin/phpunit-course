@@ -1,0 +1,6 @@
+BMICalculator
+ [x] Underweight BMI text result
+ [x] Normal BMI text result
+ [x] Overweight BMI text result
+ [x] Correct BMI value
+
