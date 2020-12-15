@@ -4,6 +4,14 @@ use PHPUnit\Framework\TestCase;
 
 class BMICalculatorTest extends TestCase
 {
+
+    // public const BASE_URL = 'http://localhost:8000'; // class constante
+
+    // public function __construct()
+    // {
+    //     parent::__construct();
+    //     define('BASE_URL', 'http://localhost:8000'); // php constante
+    // }
     public function test_underweight_BMI_text_result()
     {
         $BMICalculator = new BMICalculator;
@@ -43,5 +51,6 @@ class BMICalculatorTest extends TestCase
 
         $expected = 39.1;
         $this->assertSame($expected, $result);
+        $this->assertEquals(BASE_URL, 'http://localhost:8000');
     }
 }

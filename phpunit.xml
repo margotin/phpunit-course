@@ -7,12 +7,22 @@
          beStrictAboutCoversAnnotation="true"
          beStrictAboutOutputDuringTests="true"
          beStrictAboutTodoAnnotatedTests="true"
-         verbose="true">
+         verbose="true"
+         colors="true"
+         testdox="false"
+         >
     <testsuites>
         <testsuite name="default">
             <directory suffix="Test.php">tests</directory>
         </testsuite>
+        <testsuite name="BMI">
+            <directory>tests/BMICalculatorTest.php</directory>
+        </testsuite>
     </testsuites>
+    <php>
+        <const name="BASE_URL" value="http://localhost:8000" />
+        <const name="HOST" value="127.0.0.1" />
+    </php>
 
     <filter>
         <whitelist processUncoveredFilesFromWhitelist="true">
